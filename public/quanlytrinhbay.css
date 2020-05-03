@@ -1,0 +1,10 @@
+.map {
+    width: 100%;
+    height: auto;
+}
+.gg-map {
+    width: 200%;
+    height: 570px;
+    background-position: center center;
+    background-size: cover;
+}

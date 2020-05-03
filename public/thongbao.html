@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="template2.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+
+  <title>HI_03 Template</title>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <a class="navbar-brand" href="#">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Logo_Hust.png/1200px-Logo_Hust.png" alt="hust"
+          width="45" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li>
+            <a class="nav-link" href="index.html">Trang chủ<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Quản lý trình bay
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="quanlytrinhbay.html">Xem danh sách trình bay</a>
+              <a class="dropdown-item" href="viewTaoTrinhBay.html">Tạo trình bay</a>
+              <a class="dropdown-item" href="thongbao.html">Cảnh báo rủi ro</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Quản lý công trình
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Tạo công trình</a>
+              <a class="dropdown-item" href="#">Chỉnh sửa công trình</a>
+
+              <a class="dropdown-item" href="#">Thống kê tiến độ</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Quản lý lưới điện
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Cảnh báo an toàn hành lang lưới điện</a>
+              <a class="dropdown-item" href="#">abc</a>
+              <a class="dropdown-item" href="#">adb</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn " type="submit"><i class="fas fa-search fa-2x " style="color:rgb(12, 12, 7)"></i></button>
+
+          <div class="dropdown">
+            <a href="" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                class="fas fa-bell fa-2x ml-3" style="color:rgb(12, 12, 7)"></i></a>
+            <span class="badge badge-danger">2</span>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="thongbao.html"> MH-370: Pin yếu</a>
+              <a class="dropdown-item" href="thongbao.html">Hoàng Mai: Gió mạnh</a>
+            </div>
+          </div>
+          <a href="#" onclick="showDemo()"><i class="fab fa-facebook-messenger fa-2x ml-4" style="color:rgb(12, 12, 7)"></i></a>
+          <a href="" target="_blank">
+            <img src="https://vtv1.mediacdn.vn/thumb_w/650/2020/2/23/messi-1582393872790808712186.jpeg" alt="..." width="40"
+              height="40" class="rounded-circle ml-4" height="65">
+          </a>
+        </form>
+      </div>
+    </nav>
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+        <li class="breadcrumb-item"><a href="quanlytrinhbay.html">Quản lý trình bay</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Cảnh báo rủi ro</li>
+      </ol>
+    </nav>
+
+    <div class="row">
+      <!-- sidebar left -->
+
+      <div class="col-2 bg-light border">
+        <!-- Vertical navbar -->
+        <div class="vertical-nav  border mt-3" id="sidebar">
+          <div class="py-4 px-3">
+            <div class="media d-flex align-items-center"><img src="https://vtv1.mediacdn.vn/thumb_w/650/2020/2/23/messi-1582393872790808712186.jpeg"
+                alt="..." width="65" height="65" class="mr-3 rounded-circle" height="65">
+              <div class="media-body">
+                <p class="m-0">Duc Trung</p>
+              </div>
+            </div>
+          </div>
+
+          <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Menu</p>
+
+          <ul class="nav flex-column mb-0">
+            <li class="nav-item">
+              <a href="#" class="nav-link font-italic">
+                <i class="fa fa-th-large mr-3 fa-fw"></i>
+                Tin tức
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="lichsu.html" class="nav-link font-italic">
+                <i class="fas mr-3 fa-history"></i>
+                Lịch sử
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link font-italic">
+                <i class="fa fa-cubes mr-3 fa-fw"></i>
+                Dịch vụ
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="caidat.html" class="nav-link font-italic">
+                <i class="fas mr-3 fa-cog"></i>
+                Cài đặt
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link font-italic">
+                <i class="far mr-3 fa-question-circle"></i>
+                Trợ giúp
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- End vertical navbar -->
+
+        <!-- admin -->
+        <div class="list-group mb-1" style="margin-top: 250px">
+          <a href="#" class="list-group-item list-group-item-action active bg-warning">
+            Khu vực quản trị
+          </a>
+
+          <a href="#" class="list-group-item list-group-item-action">
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" onclick="showDemo()">
+              <p class="mb-1 desc-news">Kỹ thuật viên</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" onclick="showDemo()">
+              <p class="mb-1 desc-news">Người quản lý</p>
+            </a>
+          </a>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="col-8">
+        <h4 class="text-center">Cảnh báo rủi ro</h4>
+        <p class="text-center">Số Hiệu: MH370</p>
+
+        <div class="jumbotron">
+          <h1 class="display-4">MH-370 </h1>
+          <p class="lead">Pin yếu: % pin còn lại là 20%, thời gian có thể bay là 30'</p>
+        </div>
+
+        <div class="jumbotron">
+          <h1 class="display-4">Tốc độ gió</h1>
+          <p class="lead">Khu vực phường Bách Khoa: Tốc độ gió là 40km/h, ảnh hưởng rất lớn đến quá trình bay</p>
+        </div>
+      </div>
+
+      <!-- Sidebar right -->
+      <div class="col-2 bg-light border">
+        <div class="list-group" style="margin-top: 10px">
+          <a href="thongbao.html" class="list-group-item list-group-item-action active">
+            Tin mới nhất
+          </a>
+
+          <a href="thongbao.html" class="list-group-item list-group-item-action">
+            <a href="thongbao.html" class="list-group-item list-group-item-action flex-column align-items-start">
+              <p class="mb-1 title-news">MH-377 Pin yếu: 10%</p>
+              <p class="mb-1 desc-news">Gió: Bách Khoa - 40Km/h</p>
+              <p class="mb-1 desc-news">Mưa: Thanh Xuân </p>
+            </a>
+          </a>
+        </div>
+
+        <div class="account-online list-group" style="margin-top: 200px">
+          <a href="quanlytrinhbay.html" class="list-group-item list-group-item-action active bg-success">
+            Drone đang hoạt động
+          </a>
+          <ul class="list-group-item list-group-item-action list-unstyled">
+            <li class="mb-1">
+              <a href="#">
+
+                <div class="media d-flex align-items-center"><img src="https://vtv1.mediacdn.vn/thumb_w/650/2020/2/23/messi-1582393872790808712186.jpeg"
+                    alt="..." width="40" height="40" class="mr-3 rounded-circle">
+                  <div class="media-body">
+                    <a href="#" style="color: green">
+                      Dragon 1
+                      <i class="fas fa-globe-americas ml-5" style="color: green"></i>
+                    </a>
+                  </div>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="mb-1">
+              <a href="#">
+                <div class="media d-flex align-items-center"><img src="https://vtv1.mediacdn.vn/thumb_w/650/2020/2/23/messi-1582393872790808712186.jpeg"
+                    alt="..." width="40" height="40" class="mr-3 rounded-circle">
+                  <div class="media-body">
+
+                    <a href="#" style="color: green">
+                      Dragon 2
+                      <i class="fas fa-globe-americas ml-5" style="color: green"></i>
+                    </a>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="mb-1">
+              <a href="#">
+                <div class="media d-flex align-items-center"><img src="https://vtv1.mediacdn.vn/thumb_w/650/2020/2/23/messi-1582393872790808712186.jpeg"
+                    alt="..." width="40" height="40" class="mr-3 rounded-circle">
+                  <div class="media-body">
+                    <a href="#" style="color: green">
+                      Dragon 3
+                      <i class="fas fa-globe-americas ml-5" style="color: green"></i>
+                    </a>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="mb-1">
+              <a href="#">
+                <div class="media d-flex align-items-center"><img src="https://vtv1.mediacdn.vn/thumb_w/650/2020/2/23/messi-1582393872790808712186.jpeg"
+                    alt="..." width="40" height="40" class="mr-3 rounded-circle">
+                  <div class="media-body">
+                    <a href="#" style="color: green">
+                      Dragon 4
+                      <i class="fas fa-globe-americas ml-5" style="color: green"></i>
+                    </a>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <hr class="text-danger" />
+    <div class="row text-center">
+
+      <div class="col">
+        <img src="https://ts.hust.edu.vn/public/uploads/oyy6-logo-bk-rgb.jpg" alt="" width="100" height="120" />
+        <p><a href="#" class="text-danger">HI_03</a></p>
+
+      </div>
+      <div class="col">
+        <p>THÔNG TIN</p>
+        <ul class="list-unstyled">
+          <li>vdn</li>
+          <li>nvh</li>
+        </ul>
+      </div>
+      <div class="col">
+        <p>LIÊN HỆ</p>
+        <ul class="list-unstyled">
+          <li>ptt</li>
+          <li>ttth</li>
+        </ul>
+      </div>
+      <div class="col">
+        <p>MẠNG XÃ HỘI</p>
+
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+          <li class="list-inline-item">
+            <a class="btn-floating btn-fb mx-1">
+              <i class="fab fa-facebook-f"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-tw mx-1">
+              <i class="fab fa-twitter"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-gplus mx-1">
+              <i class="fab fa-google-plus-g"> </i>
+            </a>
+          </li>
+        </ul>
+        <!-- Social buttons -->
+      </div>
+    </div>
+    <hr />
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://www.facebook.com/duc.trung.7334">Developed by HI_03</a>
+    </div>
+    <!-- Copyright -->
+    <!-- Footer -->
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+    crossorigin="anonymous"></script>
+
+  <script>
+    function showDemo() {
+      alert("Cảm ơn bạn đã sử dụng! Tính năng đang được phát triển")
+    }
+  </script>
+</body>
+
+</html>
